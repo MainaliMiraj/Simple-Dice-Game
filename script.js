@@ -9,7 +9,7 @@ const Body = document.querySelector('body');
 const Check=document.querySelector('.check')
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-console.log(secretNumber);
+// console.log(secretNumber);
 
 const displayMessage = function (message) {
   messages.textContent = message;
