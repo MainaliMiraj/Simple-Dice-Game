@@ -9,7 +9,7 @@ const Body = document.querySelector('body');
 const Check=document.querySelector('.check')
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-// console.log(secretNumber);
+
 
 const displayMessage = function (message) {
   messages.textContent = message;
@@ -24,7 +24,6 @@ let highscore = 0;
 //Implementing the game logic...
 Check.addEventListener('click', function () {
   const guess = Number(Guess.value);
-  console.log(guess);
 
   if (!guess) {
     displayMessage('No Number⛔️!');
